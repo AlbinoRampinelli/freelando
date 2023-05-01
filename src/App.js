@@ -1,6 +1,8 @@
+import { CampoTexto } from "./componentes/CampoTexto/CampoTexto";
 import { Card } from "./componentes/Card/Card";
 import { Estilos } from "./componentes/EstilosGlobais/Estilos";
 import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
+import { Tipografia } from "./componentes/Tipografia/Tipografia"
 
 
 function App() {
@@ -8,10 +10,15 @@ function App() {
     <ProvedorTema>
       <Estilos />
       <Card>
-        <h1>Freelando</h1>
+        <Tipografia variante="h1" componente="h1">
+          Freelando
+        </Tipografia>
+        <Tipografia variante="body" componente="body">
+          Crie seu perfil gratuitamente para começar an trabalhar com os melhores freelancer. Em seguida, você poderá dar mais detalhes sobre suas demandas e sobre sua forma de trabalho
+        </Tipografia>
+        <CampoTexto titulo="Nome Completo"/>
       </Card>
     </ProvedorTema>
   );
 }
-
 export default App;
